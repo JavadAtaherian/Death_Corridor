@@ -64,10 +64,10 @@ public class Matchmaking {
            int rightDamaged = solider2.getHealth()-solider1.getRifle().getDamage();
            solider2.setHealth(rightDamaged);
        }
-
-        System.out.println("solider number"+solider1.getNumber()+"with : "+  solider1.soliderSattus()+"    and    " +"solider number"+solider2.getNumber()+"with : "+ solider2.soliderSattus());
         solider1.checkIfDead();
         solider2.checkIfDead();
+        System.out.println("solider number"+solider1.getNumber()+"with : "+  solider1.soliderSattus()+"    and    " +"solider number"+solider2.getNumber()+"with : "+ solider2.soliderSattus());
+
 
         if (solider1.getDead()){
             leftSideGraveyard.add(solider1);
