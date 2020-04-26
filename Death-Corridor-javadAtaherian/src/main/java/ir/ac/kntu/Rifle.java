@@ -127,11 +127,39 @@ public class Rifle {
 
     //zoom bonus
     public int getScopeBonus(){
-        int bonus= RandomHelper.nextInt(16);
-        if (bonus<=4 && bonus>=0){
-            bonus=5;
-        }
+        int bonus= RandomHelper.nextInt(11)+5;
         return bonus;
+    }
+
+    public String getRifleStatus(){
+        String isSnipe=null;
+        String hasScope=null;
+        String isHighCal=null;
+
+        if (this.getSniper()){
+             isSnipe= "Sniper Rifle";
+        }
+        if (!this.getSniper()){
+            isSnipe="Assault Rifle";
+        }
+
+        if (this.getScope()){
+            hasScope = "with Scope";
+        }
+        if (!this.getScope()){
+            hasScope="Without Scope";
+        }
+
+        if (this.getHighCal()){
+            isHighCal = "using High Caliber ammo";
+        }
+        if (!this.getHighCal()){
+            isHighCal="without High Caliber ammo";
+        }
+
+
+        String status = "this solider is fighting with "+isSnipe+hasScope+isHighCal;
+        return status;
     }
 
 

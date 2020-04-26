@@ -7,9 +7,16 @@ public class Solider {
     private boolean dead = false ;
 
 
+    //solider creation
+
+    public Solider(int number , Rifle rifle ){
+        this.number=number;
+        this.rifle=rifle;
+
+    }
+
+
     //getters
-
-
     public int getHealth() {
         return health;
     }
@@ -43,6 +50,21 @@ public class Solider {
 
     public void setRifle(Rifle rifle) {
         this.rifle = rifle;
+    }
+
+    //dead?
+    public boolean checkIfDead(){
+        if(this.health==0||this.health<0){
+            setDead(true);
+        }
+        return true;
+    }
+
+    public String soliderSattus(){
+        String health = String.valueOf(this.getHealth());
+        String isDead = String.valueOf(this.getDead());
+
+        return "health : "+health+" Dead?:  "+isDead;
     }
 
 
