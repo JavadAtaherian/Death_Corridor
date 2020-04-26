@@ -102,10 +102,10 @@ public class Matchmaking {
         }
 
         if (leftSideGraveyard.size()==size){
-            System.out.println("*******************LEFT SIDE WON*************************");
+            System.out.println("*******************RIGHT SIDE WON*************************");
         }
         if (rightSideGraveyard.size()==size){
-            System.out.println("*******************RIGHT SIDE WON************************");
+            System.out.println("*******************LEFT SIDE WON************************");
         }
     }
 
