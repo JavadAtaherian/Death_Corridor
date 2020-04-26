@@ -137,24 +137,24 @@ public class Rifle {
         String isHighCal=null;
 
         if (this.getSniper()){
-             isSnipe= "Sniper Rifle";
+             isSnipe= "Sniper Rifle  ";
         }
         if (!this.getSniper()){
-            isSnipe="Assault Rifle";
+            isSnipe="Assault Rifle  ";
         }
 
         if (this.getScope()){
-            hasScope = "with Scope";
+            hasScope = "with Scope  ";
         }
         if (!this.getScope()){
-            hasScope="Without Scope";
+            hasScope="Without Scope  ";
         }
 
         if (this.getHighCal()){
-            isHighCal = "using High Caliber ammo";
+            isHighCal = "using High Caliber ammo  ";
         }
         if (!this.getHighCal()){
-            isHighCal="without High Caliber ammo";
+            isHighCal="without High Caliber ammo  ";
         }
 
 
